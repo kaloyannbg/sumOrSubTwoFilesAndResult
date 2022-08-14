@@ -4,6 +4,8 @@
 // операцията ( + или - ) и имената на три файла. В първите два файла са записани числата, които ще събираме
 // или изваждаме, в третия файл е резултата. Примерно:
 
+// 1. Да прочета числата от файловете
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -104,6 +106,9 @@ int main(int argc, char const *argv[])
     float *arrWithFloat2 = fromStringToFloatArr(file2, ',', &arrSize2);
 
     sumOrSubArrays(arrWithFloat1, arrSize1, arrWithFloat2, arrSize2, '+', "resFile.txt");
+
+    free(file1);
+    free(file2);
 
     return 0;
 }
