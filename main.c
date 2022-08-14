@@ -110,5 +110,8 @@ int main(int argc, char const *argv[])
     free(file1);
     free(file2);
 
+    free(arrWithFloat1);
+    free(arrWithFloat2);
+
     return 0;
 }
